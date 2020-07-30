@@ -11,8 +11,8 @@
 # Para que sea compatible con reveal.js 4
 #+REVEAL_REVEAL_JS_VERSION: 3.9.2
 # Configuración para multiplexing
-#+REVEAL_MULTIPLEX_ID: 6f97e5c04c5a5307
-#+REVEAL_MULTIPLEX_SECRET: 15960427145338637638
+#+REVEAL_MULTIPLEX_ID: 3216e4fb0fef26fd
+#+REVEAL_MULTIPLEX_SECRET: 1596140475781522276
 #+REVEAL_MULTIPLEX_URL: https://reveal-js-multiplex-ccjbegmaii.now.sh
 #+REVEAL_MULTIPLEX_SOCKETIO_URL: https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js
 # +REVEAL_EXTERNAL_PLUGINS: { src: 'https://cdn.jsdelivr.net/npm/reveal-multiplex@0.1.0/client.js' },
@@ -45,6 +45,14 @@
 
    Horario de atención: En cualquier momento de forma presencial (verificar calendario en outlook) o por MS Teams (verificar estado).
 
+   #+BEGIN_NOTES
+   Test de notas
+
+   | tabla | asd;lkf |
+   |     1 |       2 |
+   |     4 | 4       |
+   #+END_NOTES
+   
 * Entregas
 ** Reglas de entrega
    1. No se aceptan entregas por fuera de los tiempos estipulados en los links de entregas en UVirtual.
