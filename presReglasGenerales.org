@@ -1,0 +1,171 @@
+#+TITLE: Reglas generales para el curso
+#+AUTHOR: Juan E. Gómez-Morantes, PhD
+#+DATE: 28-Jul-2020
+
+# Exportar con enlace a librería en un cdn. Hace que el archivo no funcione sin internet.
+# +REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/
+#+REVEAL_ROOT: ./reveal.js-3.9.2/
+# +REVEAL_ROOT: https://cdn.jsdelivr.net/gh/juanerasmoe/reveal.js@67b0c83557a7724032edefeffca386f97b96c1bf/
+# Agregar número de diapositiva
+#+REVEAL_INIT_OPTIONS: slideNumber:true, width:1200, height:800, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'cube'
+# Para que sea compatible con reveal.js 4
+#+REVEAL_REVEAL_JS_VERSION: 3.9.2
+# Configuración para multiplexing
+#+REVEAL_MULTIPLEX_ID: 6f97e5c04c5a5307
+#+REVEAL_MULTIPLEX_SECRET: 15960427145338637638
+#+REVEAL_MULTIPLEX_URL: https://reveal-js-multiplex-ccjbegmaii.now.sh
+#+REVEAL_MULTIPLEX_SOCKETIO_URL: https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js
+# +REVEAL_EXTERNAL_PLUGINS: { src: 'https://cdn.jsdelivr.net/npm/reveal-multiplex@0.1.0/client.js' },
+# Activar chalkboard
+#+REVEAL_EXTERNAL_PLUGINS: { src: 'https://cdn.jsdelivr.net/npm/reveal.js-chalkboard@1.0.0/chalkboard.js' },
+#+REVEAL_EXTRA_CSS: https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
+# Activar plugins
+# +REVEAL_EXTERNAL_PLUGINS: { src: 'https://cdn.jsdelivr.net/npm/reveal-multiplex@0.1.0/master.js' }
+#+REVEAL_PLUGINS: (notes chalkboard multiplex)
+# Elementos de nivel 1 y 2 (* y **) se muestran horizontalmente, Los elementos de nivel 3 (***) en adelante se despliegan horizontalmente.
+#+REVEAL_HLEVEL: 2
+# no TOC, sin número de encabezado en los títulos de las láminas
+#+OPTIONS: toc:nil num:nil 
+# Escalamiento de diapositivas
+#+REVEAL_MIN_SCALE: 1
+#+REVEAL_MAX_SCALE: 1
+
+* Meta :noexport:
+  Esta nota es la presentación de reglas generales del curso. Se usa para establecer un "contrato" de comportamiento en mis cursos de pregrado.
+
+  No se usa en posgrado por que los estudiantes de posgrado tienen una naturaleza distinta y se les da más autonomía.
+
+* Datos de contacto
+** El profesor
+   Juan Erasmo Gómez
+
+   je.gomezm@javeriana.edu.co
+
+   Oficina: Segundo piso del edificio José Gabriel Maldonado (11)
+
+   Horario de atención: En cualquier momento de forma presencial (verificar calendario en outlook) o por MS Teams (verificar estado).
+
+* Entregas
+** Reglas de entrega
+   1. No se aceptan entregas por fuera de los tiempos estipulados en los links de entregas en UVirtual.
+   2. No se aceptan links a documentos en Office 365, Google drive u otras plataformas cloud como entrega.
+   3. Sólo se aceptan entregas en formato PDF.
+   4. La forma (ortografía, formato, redacción, etc.) es importante. Esto se tomará en cuenta a la hora de calificación.
+   5. El tiempo de asignado para presentaciones debe ser respetado.
+
+* Asistencia a clase
+** Política general
+  La asistencia a clase es fundamental para el buen desempeño en el curso
+** ¿Qué constituye una inasistencia justificada?
+   1. Me quedé dormido y no alcancé a llegar a la clase
+   2. Tenía parcial/entrega de otra materia y tenía que dedicarle tiempo a eso
+   3. Se me alargó el chico de billar y se me pasó el tiempo
+   4. Estaba acompañando/visitando a un familiar enfermo
+   5. Tenía una cita médica
+   6. Una incapacidad médica
+   7. El cumpleaños de mi novia/novio
+   8. La Champions
+   9. El entierro de un familiar
+   10. Había mucho trancón
+  
+** La inasistencia (no justificada) a clase implica las siguientes situaciones:
+   1. No entregar una tarea que se había dejado en clase ya que no sabía que se había hecho en la clase a la que falté
+   2. Que se me repita un quiz/taller/trabajo en clase
+   3. Que el quiz/taller/trabajo en clase que no hice no se me tome en cuenta dentro de la nota final del curso
+   4. Que el profesor me repita el contenido de la clase a la que falté por fuera del horario de clase
+   5. No responder preguntas de parcial relacionadas con los temas de la clase a la que falté
+   6. Todas las anteriores
+   7. Sólo la 2 y la 4
+   8. Ninguna de las anteriores
+** Cuando falto a una clase (con o sin justificación) tengo que:
+   1. Preguntarle a mis compañeros o al profesor qué se hizo en esa clase
+   2. Leer por mi cuenta las lecturas asignadas a esa clase
+   3. No hacer nada. Todo va a estar bien
+   4. Sólo la 1 y la 2
+   5. Todas la anteriores
+   6. Ninguna de las anteriores
+      
+* Puntualidad
+** La falta de puntualidad:
+   1. Entorpecen el desarrollo de la clase
+   2. Distrae a compañeros y al profesor
+   3. Es una falta de respeto con todos los involucrados
+** Reglas generales de inicio de clase
+   1. La clase empieza 5 minutos después de la hora oficial de inicio
+   2. Si llegan tarde, háganlo en silencio
+   3. 10 minutos es más que suficiente para llegar a clase
+   4. “Nunca lleguen tarde con un café en la mano”
+** Tiempos de presentaciones grupales
+   1. Los tiempos de presentaciones grupales tienen que ser respetados estrictamente
+   2. Miembros del grupo que no estén presentes al *inicio* de las presentaciones se asumirán como no-participantes en la misma.
+      
+* Dispositivos electrónicos :noexport:
+** Uso de dispositivos electrónicos
+   ¿Qué es un dispositivo móvil?
+   1. Un teléfono móvil
+   2. Una tableta
+   3. Un computador portátil
+** Uso de dispositivos electrónicos
+   Mi teléfono vibró/sonó en clase. Yo debo:
+   1. Sacarlo inmediatamente a ver qué pasó. !Qué tal que sea algo importante!
+   2. Esperar a que termine la clase y ahí sí ver qué pasó
+   3. Salir del salón un momento y ya afuera del salón ver qué pasó
+** Uso de dispositivos electrónicos
+   Mi teléfono vibró/sonó por *segunda* vez en clase. Yo debo:
+   1. Sacarlo inmediatamente a ver qué pasó. !Qué tal que sea algo importante!
+   2. Esperar a que termine la clase y ahí sí ver qué pasó
+   3. Salir del salón un momento y ya afuera del salón ver qué pasó
+** Uso de dispositivos electrónicos
+   Mi teléfono vibró/sonó por *tercera* vez en clase. Yo debo:
+   1. Sacarlo inmediatamente a ver qué pasó. !Que tal que sea algo importante!
+   2. Esperar a que termine la clase y ahí sí ver qué pasó
+   3. Salir del salón un momento y ya afuera del salón ver qué pasó
+** Uso de dispositivos electrónicos
+   Estaba chateando con mi novia/novio/papá/mamá/hermano/etc. y me dejó en visto el último mensaje, pero ya empezó la clase. Yo debo:
+   1. Dejar el celular en la mesa para ver si me responde
+   2. Guardar el celular y continuar la conversación después de clase
+   3. No entrar ha clase hasta que termine la conversación
+** Uso de dispositivos electrónicos
+   Hay fecha de la Champions y está jugando mi equipo favorito. Yo puedo:
+   1. Revisar mi celular constantemente para ver si hay novedades en el partido
+   2. Poner el partido en mi portátil/celular/tableta (sin volumen) y poner atención a la clase y al partido simultáneamente
+   3. Faltar a clase para ver el partido
+   4. Aguantarme
+   5. Salir del salón cada vez que quiera consultar el marcador del partido en mi teléfono
+** Uso de dispositivos electrónicos
+   Me aburrí en clase. Está bien:
+   1. Sacar el teléfono y ponerme a jugar
+   2. Sacar el teléfono y ponerme a leer noticias o revisar redes sociales
+   3. Ver cómo me vuelvo a enganchar en la clase
+   4. Sacar el portátil y ponerme a trabajar en actividades de otras materias
+   5. Ver Netflix en alguno de mis dispositivos electrónicos
+   6. Aguantarme
+** Uso de dispositivos electrónicos
+   Durante clase, el teléfono debe:
+   1. Estar en el escritorio, pero boca-abajo para no revisarlo
+   2. En el bolsillo del pantalón o la chaqueta
+   3. En la pierna, pero boca-abajo
+   4. En la maleta o bolso
+   5. Ser entregado al profesor al iniciar la clase y reclamarlo al terminar la clase
+   6. 1, 2, 3, o 4 son correctas
+** Uso de dispositivos electrónicos
+   ¿Qué pasa si no me aguanto?
+   1. Primer llamado de atención  No pasa nada
+   2. Segundo llamado de atención  Mejor guardo el teléfono en la maleta para evitar problemas
+   3. Tercer llamado de atención  Es mejor salir del salón y terminar lo que estoy haciendo en el teléfono y vuelvo a entrar cuando termine
+   4. Cuarto llamado de atención  Definitivamente tengo cosas más importantes que hacer que la clase. Mejor salgo a hacerlas
+   _Los llamados de atención son para todo el grupo_
+
+* Clases remotas
+** Grabación de clases
+   - Las clases van a ser grabadas por el profesor
+   - Publicación en youtube por link privado
+** Logística de clase
+   - Uso de plataforma Blackboard (UVirtual) para clases
+   - Uso de plataforma Microsoft Teams para comunicación
+   - *Reportar cualquier problema que tengan con las herramientas usadas durante el curso*
+** Casos de bajo ancho de banda
+   - Uso de Blackboard por teléfono fijo (*Verificar plan de telefonía previamente*)
+   - Las presentaciones publicadas como archivo html pueden ser controladas por el profesor
+** Otra
+   Por favor complete el siguiente [[https://forms.office.com/Pages/ResponsePage.aspx?id=Dpn32j-KnECbdipUdQmAAEmnvpiiv5NJiO5NP8x0bFRUOElJM1I4RVBXNU1XNkRHMUpLU1c2TVBDNC4u][formulario]].
