@@ -1,14 +1,15 @@
 #+TITLE: Reglas generales para el curso
 #+AUTHOR: Juan E. Gómez-Morantes, PhD
+#+EMAIL: je.gomezm@javeriana.edu.co
 #+DATE: 28-Jul-2020
 
 # Exportar con enlace a librería en un cdn. Hace que el archivo no funcione sin internet.
 # +REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/
 #+REVEAL_ROOT: ./reveal.js-3.9.2/
-# +REVEAL_ROOT: https://cdn.jsdelivr.net/gh/juanerasmoe/reveal.js@67b0c83557a7724032edefeffca386f97b96c1bf/
-# Agregar número de diapositiva
-#+REVEAL_INIT_OPTIONS: slideNumber:true, width:1200, height:800, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'cube'
-# Para que sea compatible con reveal.js 4
+# +REVEAL_ROOT: https://cdn.jsdelivr.net/gh/juanerasmoe/recursosAcademicos@2a18d913957412858c8e3e528c96ae762239777e/reveal.js-3.9.2/
+# Agregar número de diapositivas
+#+REVEAL_INIT_OPTIONS: slideNumber:true, width:1200, height:800, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'cube', hash:true
+# Para que sea compatible con reveal.js 3.9.2
 #+REVEAL_REVEAL_JS_VERSION: 3.9.2
 # Configuración para multiplexing
 #+REVEAL_MULTIPLEX_ID: 3216e4fb0fef26fd
@@ -21,14 +22,13 @@
 #+REVEAL_EXTRA_CSS: https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
 # Activar plugins
 # +REVEAL_EXTERNAL_PLUGINS: { src: 'https://cdn.jsdelivr.net/npm/reveal-multiplex@0.1.0/master.js' }
-#+REVEAL_PLUGINS: (notes chalkboard multiplex)
+#+REVEAL_PLUGINS: (chalkboard multiplex notes)
 # Elementos de nivel 1 y 2 (* y **) se muestran horizontalmente, Los elementos de nivel 3 (***) en adelante se despliegan horizontalmente.
 #+REVEAL_HLEVEL: 2
-# no TOC, sin número de encabezado en los títulos de las láminas
-#+OPTIONS: toc:nil num:nil 
-# Escalamiento de diapositivas
-#+REVEAL_MIN_SCALE: 1
-#+REVEAL_MAX_SCALE: 1
+# toc:nil - no TOC
+# num:nil - sin número de encabezado en los títulos de las láminas
+# timestamp:nil - sin timestamp de creación de html
+#+OPTIONS: toc:nil num:nil timestamp:nil 
 
 * Meta :noexport:
   Esta nota es la presentación de reglas generales del curso. Se usa para establecer un "contrato" de comportamiento en mis cursos de pregrado.
@@ -45,25 +45,18 @@
 
    Horario de atención: En cualquier momento de forma presencial (verificar calendario en outlook) o por MS Teams (verificar estado).
 
-   #+BEGIN_NOTES
-   Test de notas
-
-   | tabla | asd;lkf |
-   |     1 |       2 |
-   |     4 | 4       |
-   #+END_NOTES
-   
 * Entregas
 ** Reglas de entrega
-   1. No se aceptan entregas por fuera de los tiempos estipulados en los links de entregas en UVirtual.
-   2. No se aceptan links a documentos en Office 365, Google drive u otras plataformas cloud como entrega.
-   3. Sólo se aceptan entregas en formato PDF.
-   4. La forma (ortografía, formato, redacción, etc.) es importante. Esto se tomará en cuenta a la hora de calificación.
-   5. El tiempo de asignado para presentaciones debe ser respetado.
+   #+ATTR_REVEAL: :frag (appear)
+   - No se aceptan entregas por fuera de los tiempos estipulados en los links de entregas en UVirtual.
+   - No se aceptan links a documentos en Office 365, Google drive u otras plataformas cloud como entrega.
+   - Sólo se aceptan entregas en formato PDF.
+   - La forma (ortografía, formato, redacción, etc.) es importante. Esto se tomará en cuenta a la hora de calificación.
+   - El tiempo de asignado para presentaciones debe ser respetado.
 
 * Asistencia a clase
 ** Política general
-  La asistencia a clase es fundamental para el buen desempeño en el curso
+   La asistencia a clase es fundamental para el buen desempeño en el curso
 ** ¿Qué constituye una inasistencia justificada?
    1. Me quedé dormido y no alcancé a llegar a la clase
    2. Tenía parcial/entrega de otra materia y tenía que dedicarle tiempo a eso
@@ -95,18 +88,22 @@
       
 * Puntualidad
 ** La falta de puntualidad:
-   1. Entorpecen el desarrollo de la clase
-   2. Distrae a compañeros y al profesor
-   3. Es una falta de respeto con todos los involucrados
+   - Entorpecen el desarrollo de la clase
+   - Distrae a compañeros y al profesor
+   - Es una falta de respeto con todos los involucrados
 ** Reglas generales de inicio de clase
-   1. La clase empieza 5 minutos después de la hora oficial de inicio
-   2. Si llegan tarde, háganlo en silencio
-   3. 10 minutos es más que suficiente para llegar a clase
-   4. “Nunca lleguen tarde con un café en la mano”
+   #+ATTR_REVEAL: :frag (none none none highlight-red)
+   - La clase empieza 5 minutos después de la hora oficial de inicio
+   - Si llegan tarde, háganlo en silencio
+   - 10 minutos es más que suficiente para llegar a clase
+   - “Nunca lleguen tarde con un café en la mano”
 ** Tiempos de presentaciones grupales
-   1. Los tiempos de presentaciones grupales tienen que ser respetados estrictamente
-   2. Miembros del grupo que no estén presentes al *inicio* de las presentaciones se asumirán como no-participantes en la misma.
-      
+   - Los tiempos de presentaciones grupales tienen que ser respetados estrictamente
+   - Miembros del grupo que no estén presentes al /*inicio*/ de las presentaciones se asumirán como no-participantes en la misma.
+     
+   #+BEGIN_NOTES
+   Enfatizar que los tiempos de presentación son críticos dado el tamaño del curso
+   #+END_NOTES
 * Dispositivos electrónicos :noexport:
 ** Uso de dispositivos electrónicos
    ¿Qué es un dispositivo móvil?
@@ -175,5 +172,5 @@
 ** Casos de bajo ancho de banda
    - Uso de Blackboard por teléfono fijo (*Verificar plan de telefonía previamente*)
    - Las presentaciones publicadas como archivo html pueden ser controladas por el profesor
-** Otra
+** Encuesta de capacidades de conexión
    Por favor complete el siguiente [[https://forms.office.com/Pages/ResponsePage.aspx?id=Dpn32j-KnECbdipUdQmAAEmnvpiiv5NJiO5NP8x0bFRUOElJM1I4RVBXNU1XNkRHMUpLU1c2TVBDNC4u][formulario]].
